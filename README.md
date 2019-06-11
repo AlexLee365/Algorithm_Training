@@ -1,14 +1,14 @@
-##Description: 문제해결능력을 기르기위한 알고리즘 문제 풀이 공간입니다.
+###Description: 문제해결능력을 기르기위한 알고리즘 문제 풀이 공간입니다.
 
 
 
-##Algorithm_Codility_Exam1_BinaryGap
+####Algorithm_Codility_Exam1_BinaryGap
 
-**[이진수의 BinaryGap을 구하기]**
+##### **[이진수의 BinaryGap을 구하기]**
 
-요약: BinaryGap이란 => 1과 1사이에 들어가있는 0값
+요약:  BinaryGap들의 길이(갯수) 들 중에 가장 큰 값을 반환하는 함수를 작성하시오.
 
-​      BinaryGap들의 길이(갯수) 들 중에 가장 큰 값을 반환하는 함수를 작성하시오.
+(BinaryGap: 1과 1사이에 들어가있는 0값)
 
 Ex) 숫자 9 => 이진수 1001 => BinaryGap Length = 2
 
