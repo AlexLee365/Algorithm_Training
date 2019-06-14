@@ -1,8 +1,9 @@
 import UIKit
 /*
- Codility 문제 1번 [이진수의 BinaryGap을 구하기]
+ Codility 문제 1번
  
- 요약: BinaryGap이란 => 1과 1사이에 들어가있는 0값
+ 요약: 이진수의 BinaryGap을 구하기
+      BinaryGap이란 => 1과 1사이에 들어가있는 0값
       BinaryGap들의 길이(갯수) 들 중에 가장 큰 값을 반환하는 함수를 작성하시오
  Ex) 숫자 9 => 이진수 1001 => BinaryGap Length = 2
      숫자 529 => 이진수 1000010001 => BinaryGap Length = 4, 3 => 반환 4

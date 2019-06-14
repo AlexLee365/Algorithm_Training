@@ -1,6 +1,15 @@
 import UIKit
 
 /*
+ Codility 문제 2번
+ 
+ 요약: Int배열에서 같은 숫자끼리 한쌍으로(2개씩) 묶어서 혼자인 숫자 리턴하기
+      가장 효율적인 알고리즘을 구성하시오
+      - 배열 안의 구성요소 갯수 => 범위 [1..1,000,000] 안의 홀수 갯수
+      - 배열 안의 숫자의 범위 => 범위 [1..1,000,000,000] 안의 정수
+ Ex) [9, 3, 9, 3, 9, 7, 9]  => 한쌍(9, 9), (3, 3), (9, 9)  => 7 짝 X => 7 리턴
+ 
+ 
  A non-empty array A consisting of N integers is given. The array contains an odd number of elements, and each element of the array can be paired with another element that has the same value, except for one element that is left unpaired.
  
  For example, in array A such that:
