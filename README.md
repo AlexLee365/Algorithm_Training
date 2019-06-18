@@ -1,10 +1,10 @@
-###Description: 문제해결능력을 기르기위한 알고리즘 문제 풀이 공간입니다.
+### Description: 문제해결능력을 기르기위한 알고리즘 문제 풀이 공간입니다.
 
 ***
 
 
 
-####Algorithm_Codility_Exam1_BinaryGap
+#### Algorithm_Codility_Exam1_BinaryGap
 
 ##### **[이진수의 BinaryGap을 구하기]**
 
