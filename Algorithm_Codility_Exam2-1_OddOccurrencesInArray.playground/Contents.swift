@@ -45,27 +45,49 @@ import UIKit
  */
 
 
-public func solution() -> Int {
-    var A = [9, 3, 9, 3, 9, 7, 9]
-    var result = 0
+public func solution(_ A : inout [Int]) -> Int {
+    // 이중 for문을 돌려서 해당 element의 갯수가 홀수인지를 일일이 검사함 => 큰 배열 데이터가 들어갔을시 연산처리가 오래걸려 Fail
+    var checkedValue = [Int]()
     
     for i in A {
+        guard !checkedValue.contains(i) else { continue }
         var count = 0
-        print("i: ", i)
         
         for k in A {
-            if i == k {
-              count += 1
-            print("count: ", count)
-            }
+            if i == k { count += 1 }
         }
         
-        if count % 2 == 1 {
-            result = i
-            print("result: ", result)
+        if count % 2 == 1 { return i }
+        
+        checkedValue.append(i)
+    }
+    return 0
+}
+
+// =================================== ===================================
+
+public func solution2(_ A : inout [Int]) -> Int {
+    // 이중 for문을 피하고자 첫번째for문으로 (Key값: 해당 element + Value값: element갯수) 정보를 담고있는 Dictionary를 만듬
+    // 두번째 for문에서 value가 홀수인것만을 추출해내면 훨씬 연산처리속도가 감소됨
+    var arrangedDictionary = [Int: Int]()
+
+    for i in A {
+        if arrangedDictionary[i] == nil {
+            arrangedDictionary[i] = 1
+        } else if var value = arrangedDictionary[i] {
+            value += 1
+            arrangedDictionary[i] = value
         }
     }
     
-    return result
+    for i in arrangedDictionary {
+        if i.value % 2 == 1 {
+            return i.key
+        }
+    }
+    return 0
 }
-solution()
+var A = [9, 3, 9, 3, 9, 7, 9]
+
+//solution(&A)
+solution2(&A)
