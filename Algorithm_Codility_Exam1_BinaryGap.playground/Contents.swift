@@ -31,7 +31,6 @@ Copyright 2009–2019 by Codility Limited. All Rights Reserved. Unauthorized cop
 func noName(_ inputNum: Int) -> Int {
     let binaryValue = String(inputNum, radix: 2)
     print(binaryValue)
-    binaryValue.count
     
     var meetNumber1 = false
     var binaryGapLengthArray = [Int]()
