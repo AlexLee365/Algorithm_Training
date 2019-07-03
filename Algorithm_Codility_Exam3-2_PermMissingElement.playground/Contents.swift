@@ -52,3 +52,5 @@ public func solution(_ A : inout [Int]) -> Int {
 
 var array = [2, 3, 1, 5]
 solution(&array)
+
+
